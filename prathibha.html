@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prathibha's Landing Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #eaf1fb;
+      color: #222;
+    }
+    header {
+      background: #2563eb;
+      color: #fff;
+      padding: 3rem 1rem 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin-bottom: 0.5rem;
+      font-size: 2.8rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      font-size: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+    .cta {
+      display: inline-block;
+      margin-top: 1.2rem;
+      padding: 0.75rem 2.2rem;
+      background: #fff;
+      color: #2563eb;
+      border-radius: 24px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      border: 2px solid #2563eb;
+      transition: background 0.2s, color 0.2s;
+    }
+    .cta:hover {
+      background: #2563eb;
+      color: #fff;
+    }
+    .section {
+      padding: 2rem 1rem;
+      max-width: 700px;
+      margin: 2rem auto 0 auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(37,99,235,0.04);
+    }
+    .contact-info {
+      margin-top: 2rem;
+      background: #eaf1fb;
+      padding: 1.5rem;
+      border-radius: 10px;
+      border: 1px solid #b6d2fa;
+      color: #2563eb;
+      font-size: 1.1rem;
+    }
+    label {
+      display: block;
+      margin: 0.7em 0 0.2em;
+      color: #2563eb;
+    }
+    input, textarea {
+      width: 100%;
+      max-width: 500px;
+      padding: 0.7em;
+      margin-bottom: 1em;
+      border-radius: 6px;
+      border: 1px solid #b6d2fa;
+      font-size: 1em;
+      font-family: inherit;
+    }
+    button {
+      background: #2563eb;
+      color: #fff;
+      border: none;
+      border-radius: 24px;
+      padding: 0.7em 2em;
+      font-size: 1em;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+    button:hover {
+      background: #1742a4;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+      color: #666;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Prathibha</h1>
+    <p>Welcome to Prathibha's personal landing page.<br>
+      Discover more and get in touch below!
+    </p>
+    <a href="#contact" class="cta">Contact Me</a>
+  </header>
+
+  <div class="section" id="about">
+    <h2 style="color:#2563eb;">About Me</h2>
+    <p>
+      Hi, I'm Prathibha. This is my landing page, styled in my favorite color: blue! Feel free to reach out using the contact form below.
+    </p>
+  </div>
+
+  <div class="section" id="contact">
+    <h2 style="color:#2563eb;">Contact Information</h2>
+    <div class="contact-info">
+      <strong>Email:</strong> prathibha@email.com<br>
+      <strong>Phone:</strong> +91-12345-67890
+    </div>
+    <form style="margin-top:2rem;">
+      <label for="name">Your Name</label>
+      <input id="name" type="text" placeholder="Enter your name" required>
+      <label for="email">Your Email</label>
+      <input id="email" type="email" placeholder="Enter your email" required>
+      <label for="message">Message</label>
+      <textarea id="message" rows="4" placeholder="Write your message here"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 Prathibha. All rights reserved.
+  </footer>
+</body>
+</html>

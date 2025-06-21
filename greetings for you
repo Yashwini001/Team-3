@@ -1,0 +1,96 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Greetings to Suchetha Madam - CS Books Shopping Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f5f7fa;
+        }
+        .container {
+            background: #fff;
+            border-radius: 8px;
+            max-width: 720px;
+            margin: auto;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+            padding: 32px 40px;
+        }
+        h1 {
+            color: #2a5298;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+        }
+        th, td {
+            padding: 12px 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf0fb;
+            color: #34495e;
+        }
+        tr:nth-child(even) {
+            background-color: #f3f6fa;
+        }
+        .prompt {
+            font-size: 1.16em;
+            color: #2a5298;
+            margin-top: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello Suchetha Madam! 👋</h1>
+        <p>Welcome! Here’s a shopping cart with some popular Computer Science books:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Book Title</th>
+                    <th>Author(s)</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Introduction to Algorithms (3rd Edition)</td>
+                    <td>Cormen, Leiserson, Rivest</td>
+                    <td>$90</td>
+                </tr>
+                <tr>
+                    <td>Clean Code: A Handbook of Agile Software Craftsmanship</td>
+                    <td>Robert C. Martin</td>
+                    <td>$45</td>
+                </tr>
+                <tr>
+                    <td>Computer Networking: A Top-Down Approach</td>
+                    <td>Kurose & Ross</td>
+                    <td>$80</td>
+                </tr>
+                <tr>
+                    <td>Artificial Intelligence: A Modern Approach</td>
+                    <td>Russell & Norvig</td>
+                    <td>$110</td>
+                </tr>
+                <tr>
+                    <td>The Pragmatic Programmer</td>
+                    <td>Andrew Hunt, David Thomas</td>
+                    <td>$40</td>
+                </tr>
+                <tr>
+                    <td>Operating System Concepts</td>
+                    <td>Silberschatz, Galvin, Gagne</td>
+                    <td>$95</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="prompt">
+            Are you interested in any of these books, or would you like to see more options?
+        </div>
+    </div>
+</body>
+</html>

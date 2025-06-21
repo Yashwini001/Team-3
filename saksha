@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Saksha - Bio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    .container {
+      width: 90%;
+      max-width: 800px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      text-align: center;
+      color: #444;
+    }
+    .profile-img {
+      display: block;
+      margin: 0 auto 20px;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .social-links {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .social-links a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #1a73e8;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="your-photo.jpg" alt="Saksha" class="profile-img">
+    <h1>Saksha</h1>
+    <h2>Lecturer Title</h2>
+    
+    <p>Hello! I’m Saksha ,Lecturer, passionate about python full stack development . I specialize in python programming  development. With 2 years, I've worked on a variety of projects .</p>
+    
+    <p>Outside of work, I enjoy travel, and I'm always eager to connect with like-minded individuals.</p>
+    
+    <div class="social-links">
+      <a href="https://github.com/Saksha27" target="_blank">GitHub</a>
+      <a href="saksha@yenepoya.edu.in">Email</a>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,76 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Praveen - Lecturer, Computer Science</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(to right, #83a4d4, #b6fbff);
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        header {
-            background-color: #004e92;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-        .container {
-            padding: 20px;
-            max-width: 900px;
-            margin: auto;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: #004e92;
-        }
-        .profile-photo {
-            width: 120px;
-            height: 120px;
-            background-color: #ccc;
-            border-radius: 50%;
-            margin: 20px auto;
-        }
-        footer {
-            text-align: center;
-            padding: 15px;
-            background-color: #004e92;
-            color: white;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Praveen - Lecturer</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #6e8efb, #a777e3);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      padding: 60px 20px 30px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    header p {
+      font-size: 1.5em;
+      margin: 10px 0 0;
+      font-weight: 300;
+    }
+    .content-box {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 600px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 1.2s ease-in;
+    }
+    .content-box p {
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.2);
+      font-size: 0.9em;
+      margin-top: auto;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Praveen</h1>
-        <p>Lecturer, Department of Computer Science, Yenepoya College</p>
-    </header>
-    <div class="container">
-        <div class="profile-photo"></div>
-        <h2>About Me</h2>
-        <p>I am a passionate lecturer with over 5 years of teaching experience in computer science. I specialize in programming languages, data structures, and software engineering. At Yenepoya College, I am committed to fostering analytical thinking and problem-solving skills among students.</p>
-        
-        <h2>Education</h2>
-        <ul>
-            <li>M.Tech in Computer Science, XYZ University</li>
-            <li>B.E. in Information Science, ABC Institute of Technology</li>
-        </ul>
+  <header>
+    <h1>Praveen</h1>
+    <p>Lecturer, Department of Computer Science</p>
+    <p>Yenepoya College</p>
+  </header>
 
-        <h2>Teaching Interests</h2>
-        <p>My key interests include Python programming, web development, algorithms, and operating systems.</p>
+  <div class="content-box">
+    <p>Welcome to my personal webpage. I am a dedicated lecturer in the Computer Science department at Yenepoya College, where I share my passion for technology and innovation with the next generation of developers and thinkers.</p>
+  </div>
 
-        <h2>Research Interests</h2>
-        <p>Cloud computing, AI in education, and data privacy techniques are areas I actively explore in my academic research.</p>
-
-        <h2>Contact</h2>
-        <p>Email: praveen@example.com<br>Phone: +91-9876543210</p>
-    </div>
-    <footer>
-        <p>&copy; 2025 Praveen | Yenepoya College</p>
-    </footer>
+  <footer>
+    &copy; 2025 Praveen | Yenepoya College
+  </footer>
 </body>
 </html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thanziha's Bio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px 40px;
+      background: #f7f3f9;
+      color: #4a4a4a;
+      line-height: 1.7;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      border-radius: 12px;
+    }
+    h1, h2 {
+      color: #6a4c93;
+      text-shadow: 1px 1px 2px #cfc5e8;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 3rem;
+    }
+    .container {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .left, .right {
+      flex: 1 1 400px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    .section {
+      background: #fff;
+      padding: 25px 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(106,76,147,0.15);
+      color: #3a3a3a;
+    }
+    .bio p {
+      margin-bottom: 1.2em;
+      font-size: 1.1rem;
+    }
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-weight: 600;
+    }
+    .skill {
+      background: #f08a5d;
+      color: white;
+      padding: 7px 15px;
+      border-radius: 20px;
+      font-size: 0.95rem;
+      box-shadow: 0 2px 6px rgba(184,59,94,0.5);
+      transition: background-color 0.3s ease;
+      cursor: default;
+      user-select: none;
+    }
+    .skill:hover {
+      background: #b83b5e;
+    }
+    ul {
+      padding-left: 20px;
+      margin-top: 0;
+    }
+    ul li {
+      margin-bottom: 0.8em;
+      font-size: 1rem;
+    }
+    .contact {
+      text-align: center;
+      font-size: 1.1rem;
+      margin-top: 40px;
+    }
+    .contact a {
+      color: #f08a5d;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    .contact a:hover {
+      color: #b83b5e;
+      text-decoration: underline;
+    }
+    .contact a::before {
+      margin-right: 6px;
+    }
+    .email::before {
+      content: "📧";
+    }
+    .linkedin::before {
+      content: "🔗";
+    }
+    .github::before {
+      content: "🐙";
+    }
+    @media (max-width: 850px) {
+      .container {
+        flex-direction: column;
+      }
+      .left, .right {
+        flex: 1 1 100%;
+      }
+    }
+    @media (max-width: 500px) {
+      body {
+        padding: 20px;
+        margin: 20px auto;
+      }
+      h1 {
+        font-size: 2.2rem;
+      }
+      .skills-list {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Thanziha</h1>
+
+  <div class="container">
+    <div class="left">
+      <section class="section bio">
+        <h2>About Me</h2>
+        <p>Hello! I'm Thanziha, a Lecturer based in Mangalore. I specialize in web development and full stack development and have a passion for exploring new technologies and continuous learning.</p>
+        <p>With over 2 years of experience, I have worked on various projects. I enjoy solving complex problems and continuously expanding my skill set.</p>
+        <p>In my free time, I enjoy reading tech blogs, coding personal projects, and exploring new programming languages.</p>
+      </section>
+
+      <section class="section education">
+        <h2>Education</h2>
+        <p><strong>Master’s in Computer Science</strong></p>
+      </section>
+
+      <section class="section hobbies">
+        <h2>Hobbies & Interests</h2>
+        <p>Write about your hobbies or interests here. For example, reading, hiking, music, traveling, etc.</p>
+      </section>
+
+      <section class="section certifications">
+        <h2>Certifications</h2>
+        <ul>
+          <li>Certified Web Developer)</li>
+          <li>AWS Certified Solutions Architect</li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="right">
+      <section class="section skills">
+        <h2>Skills</h2>
+        <div class="skills-list">
+          <span class="skill">HTML</span>
+          <span class="skill">CSS</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">SQL</span>
+        </div>
+      </section>
+
+      <section class="section projects">
+        <h2>Projects</h2>
+        <p>Here are a few highlights of my work:</p>
+        <ul>
+          <li><strong>Project A:</strong> Developed a responsive web app for managing student data using React and Node.js.</li>
+          <li><strong>Project B:</strong> Built a full-stack e-commerce site with MongoDB and Express backend.</li>
+          <li><strong>Project C:</strong> Created an interactive dashboard to visualize analytics data for academic research.</li>
+        </ul>
+      </section>
+
+      <section class="section goals">
+        <h2>Career Goals</h2>
+        <p>I aim to become a lead developer and contribute to open-source projects.</p>
+      </section>
+
+      <section class="section languages">
+        <h2>Languages</h2>
+        <ul>
+          <li>English – Fluent</li>
+          <li>Hindi –  Conversational</li>
+          <li>Kannada – Native</li>
+          <Ii>Malayalam - Fluent</Ii>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <section class="section contact">
+    <h2>Contact Me</h2>
+    <p>
+      <a href="mailto:thanzihahameed@gmail.com class="email">Email</a> | 
+      <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" class="linkedin">LinkedIn</a> | 
+      <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="github">GitHub</a>
+    </p>
+  </section>
+</body>
+</html>

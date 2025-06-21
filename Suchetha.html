@@ -3,13 +3,46 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ms.Suchetha Navada| Computer Science Educator</title>
+  <title>Mrs. Suchetha Navada | Computer Science Lecturer</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f9f9f9;
+      background: #f7f9fb;
+    }
+
+    nav {
+      background: #3783cf;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: 600;
+      position: relative;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #f1c40f;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      background: #f1c40f;
+      bottom: -5px;
+      left: 0;
+      transition: width 0.3s;
+    }
+
+    nav a:hover::after {
+      width: 100%;
     }
     .header {
       background-color: #2c3e50;
@@ -17,63 +50,88 @@
       padding: 60px 20px;
       text-align: center;
     }
-    .header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    .about, .courses, .contact {
-      max-width: 800px;
+
+    .section {
+      max-width: 900px;
       margin: 40px auto;
-      padding: 20px;
+      padding: 30px;
       background: white;
-      border-radius: 8px;
+      border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
+
     h2 {
       color: #2c3e50;
     }
-    ul {
-      padding-left: 20px;
+
+    .gallery img {
+      width: 160px;
+      margin: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
-    .footer {
+
+    footer {
       text-align: center;
       padding: 20px;
       background: #ecf0f1;
-      color: #555;
+      color: #666;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-
-  <div class="header">
-    <h1>Mrs.Suchetha navada</h1>
-    <p>Passionate About Teaching Code and Problem Solving</p>
-  </div>
-
-  <div class="about">
-    <h2>About Me</h2>
-    <p>I’m a Computer Science teacher with over 10 years of experience in teaching programming, data structures, and software engineering. I love helping students unlock their full potential with logic and code.</p>
-  </div>
-
-  <div class="courses">
-    <h2>Courses Offered</h2>
-    <ul>
-      <li>Intro to Programming (Python, Java)</li>
-      <li>Data Structures & Algorithms</li>
-      <li>Web Development Bootcamp</li>
-      <li>Advanced Topics in Computer Science</li>
-    </ul>
-  </div>
-
-  <div class="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:suchethaN@gmail.com">suchethaN@gmail.com</a></p>
-    <p>Office Hours: Mon–Fri, 3–5 PM (IST)</p>
-  </div>
-
-  <div class="footer">
-    <p>&copy; 2025 Mrs.Suchetha Navada | All rights reserved</p>
-  </div>
-
-</body>
-</html>
+    <div class="header">
+        <h1>Mrs. Suchetha Navada</h1>
+        <p>Passionate About Teaching Code and Problem Solving</p>
+      </div>
+      <div></div>
+      <nav>
+        <a href="#vision">Vision</a>
+        <a href="#about">About Me</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    
+      <div class="section" id="vision">
+        <h2>Vision</h2>
+        <p>To inspire and empower the next generation of thinkers and innovators through the power of Computer Science education.</p>
+      </div>
+    
+      <div class="section" id="about">
+        <h2>About Me</h2>
+        <p>I’m Mrs. Suchetha Navada, a passionate Computer Science teacher committed to making coding and digital logic accessible to all. With years of experience in the classroom, my approach blends theory with practical application to ignite curiosity and problem-solving skills in every student.</p>
+      </div>
+    
+      <div class="section" id="achievements">
+        <h2>Achievements</h2>
+        <ul>
+          <li>Certified Microsoft Innovative Educator</li>
+          <li>Led regional coding bootcamps and student hackathons</li>
+          <li>Developed interactive curriculum adopted across schools</li>
+          <li>Mentor to multiple national-level Olympiad finalists</li>
+        </ul>
+      </div>
+    
+      <div class="section" id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+          <img src="image1.jpg" alt="Teaching moment" />
+          <img src="image2.jpg" alt="Student workshop" />
+          <img src="image3.jpg" alt="Coding competition" />
+          <!-- Add more images as needed -->
+        </div>
+      </div>
+    
+      <div class="section" id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:suchetha.navada@example.com">suchetha.navada@example.com</a></p>
+        <p>Location: Mangaluru, Karnataka</p>
+        <p>Office Hours: Mon–Fri, 10 AM – 4 PM</p>
+      </div>
+    
+      <footer>
+        &copy; 2025 Mrs. Suchetha Navada. All rights reserved.
+      </footer>
+  </body></html>

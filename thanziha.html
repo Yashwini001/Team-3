@@ -3,32 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Thanziha's Bio</title>
+  <title>Thanziha's Biography</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <style>
     body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
-      background: #e8f5e9;
+      background: linear-gradient(135deg, #ffe6f0, #ffccd9); /* light pink gradient */
       color: #4a4a4a;
       line-height: 1.6;
       overflow-x: hidden;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
     header {
       text-align: center;
-      padding: 40px 0 20px;
-      background: #d9b99b;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      padding: 40px 20px 30px;
+      background: rgba(255, 182, 193, 0.6); /* light pink transparent */
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       position: sticky;
       top: 0;
       z-index: 10;
+      color: #a8325a;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
     }
     header h1 {
       margin: 0;
       font-size: 2.8rem;
-      color: #6a4c93;
-      text-shadow: 1px 1px 2px #cfc5e8;
     }
     .main {
       display: grid;
@@ -46,9 +49,9 @@
     nav {
       position: sticky;
       top: 140px;
-      background: #d9b99b;
+      background: #ffb6c1; /* light pink */
       border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(106,76,147,0.1);
+      box-shadow: 0 2px 10px rgba(168, 50, 90, 0.15);
       padding: 20px;
       height: fit-content;
       font-size: 0.95rem;
@@ -63,21 +66,22 @@
     }
     nav a {
       text-decoration: none;
-      color: #6a4c93;
+      color: #a8325a;
       transition: color 0.3s;
     }
     nav a:hover {
-      color: #b83b5e;
+      color: #ff6f91;
     }
     section {
-      background: #d9b99b;
+      background: rgba(255, 182, 193, 0.4);
       border-radius: 10px;
       padding: 25px 30px;
-      box-shadow: 0 2px 12px rgba(106,76,147,0.1);
+      box-shadow: 0 2px 12px rgba(168, 50, 90, 0.1);
       opacity: 0;
       transform: translateY(30px);
       animation: fadeInUp 0.8s ease forwards;
       margin-bottom: 30px;
+      color: #4a4a4a;
     }
     section:nth-of-type(1) { animation-delay: 0.2s; }
     section:nth-of-type(2) { animation-delay: 0.4s; }
@@ -89,14 +93,14 @@
     h2 {
       font-weight: 600;
       margin-top: 0;
-      color: #6a4c93;
+      color: #a8325a;
       position: relative;
     }
     h2::after {
       content: "";
       width: 50px;
       height: 3px;
-      background: #f08a5d;
+      background: #ff6f91;
       position: absolute;
       bottom: -8px;
       left: 0;
@@ -109,15 +113,15 @@
       margin-top: 10px;
     }
     .skill {
-      background: #eec9f5;
-      color: #6a4c93;
+      background: #ffd1dc;
+      color: #a8325a;
       padding: 8px 14px;
       border-radius: 20px;
       transition: background 0.3s, transform 0.3s;
       cursor: default;
     }
     .skill:hover {
-      background: #f8d2f2;
+      background: #ffb6c1;
       transform: translateY(-3px);
     }
     ul {
@@ -132,21 +136,22 @@
       content: "•";
       position: absolute;
       left: -15px;
-      color: #f08a5d;
+      color: #ff6f91;
     }
     .contact a {
-      color: #f08a5d;
+      color: #ff6f91;
       text-decoration: none;
       transition: color 0.3s;
     }
     .contact a:hover {
-      color: #b83b5e;
+      color: #a8325a;
     }
     footer {
       text-align: center;
       padding: 20px 0;
       font-size: 0.9rem;
       color: #888;
+      margin-top: auto;
     }
   </style>
 </head>
@@ -162,7 +167,6 @@
         <li><a href="#about">About</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#skills">Skills</a></li>
-       
         <li><a href="#goals">Goals</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -182,12 +186,12 @@
       <section id="skills">
         <h2>Skills</h2>
         <div class="skills-list">
-          <span class="skill">HTML</span><span class="skill">CSS</span><span class="skill">JavaScript</span><span
+          <span class="skill">HTML</span>
+          <span class="skill">CSS</span>
+          <span class="skill">JavaScript</span>
           <span class="skill">SQL</span>
         </div>
       </section>
-
-  
 
       <section id="goals">
         <h2>Career Goals</h2>
@@ -198,7 +202,7 @@
         <h2>Contact Me</h2>
         <p class="contact">
           <a href="mailto:thanzihahameed@gmail.com">📧 Email</a> | 
-          <a href="https://github.com/thanziha26" target="_blank">🐙 GitHub</a>
+          <a href="https://github.com/thanziha26" target="_blank" rel="noopener noreferrer">🐙 GitHub</a>
         </p>
       </section>
     </div>

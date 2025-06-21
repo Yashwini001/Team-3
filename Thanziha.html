@@ -8,202 +8,205 @@
   <style>
     body {
       font-family: 'Poppins', sans-serif;
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 30px 40px;
-      background: #f7f3f9;
+      margin: 0;
+      padding: 0;
+      background: #e8f5e9;
       color: #4a4a4a;
-      line-height: 1.7;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      border-radius: 12px;
+      line-height: 1.6;
+      overflow-x: hidden;
     }
-    h1, h2 {
+    header {
+      text-align: center;
+      padding: 40px 0 20px;
+      background: #d9b99b;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
       color: #6a4c93;
       text-shadow: 1px 1px 2px #cfc5e8;
-      margin-bottom: 20px;
-      font-weight: 600;
     }
-    h1 {
-      text-align: center;
-      margin-bottom: 40px;
-      font-size: 3rem;
-    }
-    .container {
-      display: flex;
-      gap: 40px;
-      flex-wrap: wrap;
-    }
-    .left, .right {
-      flex: 1 1 400px;
-      display: flex;
-      flex-direction: column;
+    .main {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
       gap: 30px;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
-    .section {
-      background: #fff;
-      padding: 25px 30px;
+    @media(max-width: 900px) {
+      .main {
+        grid-template-columns: 1fr;
+      }
+    }
+    nav {
+      position: sticky;
+      top: 140px;
+      background: #d9b99b;
       border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(106,76,147,0.15);
-      color: #3a3a3a;
+      box-shadow: 0 2px 10px rgba(106,76,147,0.1);
+      padding: 20px;
+      height: fit-content;
+      font-size: 0.95rem;
     }
-    .bio p {
-      margin-bottom: 1.2em;
-      font-size: 1.1rem;
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    nav li {
+      margin: 12px 0;
+    }
+    nav a {
+      text-decoration: none;
+      color: #6a4c93;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #b83b5e;
+    }
+    section {
+      background: #d9b99b;
+      border-radius: 10px;
+      padding: 25px 30px;
+      box-shadow: 0 2px 12px rgba(106,76,147,0.1);
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.8s ease forwards;
+      margin-bottom: 30px;
+    }
+    section:nth-of-type(1) { animation-delay: 0.2s; }
+    section:nth-of-type(2) { animation-delay: 0.4s; }
+    section:nth-of-type(3) { animation-delay: 0.6s; }
+    section:nth-of-type(4) { animation-delay: 0.8s; }
+    @keyframes fadeInUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+    h2 {
+      font-weight: 600;
+      margin-top: 0;
+      color: #6a4c93;
+      position: relative;
+    }
+    h2::after {
+      content: "";
+      width: 50px;
+      height: 3px;
+      background: #f08a5d;
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      border-radius: 2px;
     }
     .skills-list {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
-      font-weight: 600;
+      gap: 10px;
+      margin-top: 10px;
     }
     .skill {
-      background: #f08a5d;
-      color: white;
-      padding: 7px 15px;
+      background: #eec9f5;
+      color: #6a4c93;
+      padding: 8px 14px;
       border-radius: 20px;
-      font-size: 0.95rem;
-      box-shadow: 0 2px 6px rgba(184,59,94,0.5);
-      transition: background-color 0.3s ease;
+      transition: background 0.3s, transform 0.3s;
       cursor: default;
-      user-select: none;
     }
     .skill:hover {
-      background: #b83b5e;
+      background: #f8d2f2;
+      transform: translateY(-3px);
     }
     ul {
+      margin: 0;
       padding-left: 20px;
-      margin-top: 0;
     }
     ul li {
-      margin-bottom: 0.8em;
-      font-size: 1rem;
+      margin-bottom: 8px;
+      position: relative;
     }
-    .contact {
-      text-align: center;
-      font-size: 1.1rem;
-      margin-top: 40px;
+    ul li::before {
+      content: "•";
+      position: absolute;
+      left: -15px;
+      color: #f08a5d;
     }
     .contact a {
       color: #f08a5d;
       text-decoration: none;
-      margin: 0 15px;
-      font-weight: 600;
-      transition: color 0.3s ease;
+      transition: color 0.3s;
     }
     .contact a:hover {
       color: #b83b5e;
-      text-decoration: underline;
     }
-    .contact a::before {
-      margin-right: 6px;
-    }
-    .email::before {
-      content: "📧";
-    }
-    .linkedin::before {
-      content: "🔗";
-    }
-    .github::before {
-      content: "🐙";
-    }
-    @media (max-width: 850px) {
-      .container {
-        flex-direction: column;
-      }
-      .left, .right {
-        flex: 1 1 100%;
-      }
-    }
-    @media (max-width: 500px) {
-      body {
-        padding: 20px;
-        margin: 20px auto;
-      }
-      h1 {
-        font-size: 2.2rem;
-      }
-      .skills-list {
-        justify-content: center;
-      }
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.9rem;
+      color: #888;
     }
   </style>
 </head>
 <body>
-  <h1>Thanziha</h1>
 
-  <div class="container">
-    <div class="left">
-      <section class="section bio">
+  <header>
+    <h1>Thanziha</h1>
+  </header>
+
+  <div class="main">
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+       
+        <li><a href="#goals">Goals</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div>
+      <section id="about">
         <h2>About Me</h2>
-        <p>Hello! I'm Thanziha, a Lecturer based in Mangalore. I specialize in web development and full stack development and have a passion for exploring new technologies and continuous learning.</p>
-        <p>With over 2 years of experience, I have worked on various projects. I enjoy solving complex problems and continuously expanding my skill set.</p>
-        <p>In my free time, I enjoy reading tech blogs, coding personal projects, and exploring new programming languages.</p>
+        <p>Hi! I'm Thanziha, a Lecturer from Mangalore specializing in web & full‑stack development. I’m passionate about learning and playing with new technologies, and I’ve spent 2+ years solving problems and building web experiences.</p>
       </section>
 
-      <section class="section education">
+      <section id="education">
         <h2>Education</h2>
         <p><strong>Master’s in Computer Science</strong></p>
       </section>
 
-      <section class="section hobbies">
-        <h2>Hobbies & Interests</h2>
-        <p>Write about your hobbies or interests here. For example, reading, hiking, music, traveling, etc.</p>
-      </section>
-
-      <section class="section certifications">
-        <h2>Certifications</h2>
-        <ul>
-          <li>Certified Web Developer)</li>
-          <li>AWS Certified Solutions Architect</li>
-        </ul>
-      </section>
-    </div>
-
-    <div class="right">
-      <section class="section skills">
+      <section id="skills">
         <h2>Skills</h2>
         <div class="skills-list">
-          <span class="skill">HTML</span>
-          <span class="skill">CSS</span>
-          <span class="skill">JavaScript</span>
+          <span class="skill">HTML</span><span class="skill">CSS</span><span class="skill">JavaScript</span><span
           <span class="skill">SQL</span>
         </div>
       </section>
 
-      <section class="section projects">
-        <h2>Projects</h2>
-        <p>Here are a few highlights of my work:</p>
-        <ul>
-          <li><strong>Project A:</strong> Developed a responsive web app for managing student data using React and Node.js.</li>
-          <li><strong>Project B:</strong> Built a full-stack e-commerce site with MongoDB and Express backend.</li>
-          <li><strong>Project C:</strong> Created an interactive dashboard to visualize analytics data for academic research.</li>
-        </ul>
-      </section>
+  
 
-      <section class="section goals">
+      <section id="goals">
         <h2>Career Goals</h2>
-        <p>I aim to become a lead developer and contribute to open-source projects.</p>
+        <p>My aim is to lead development teams, contribute to open‑source, and build tools that empower learners and developers around the world.</p>
       </section>
 
-      <section class="section languages">
-        <h2>Languages</h2>
-        <ul>
-          <li>English – Fluent</li>
-          <li>Hindi –  Conversational</li>
-          <li>Kannada – Native</li>
-          <Ii>Malayalam - Fluent</Ii>
-        </ul>
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <p class="contact">
+          <a href="mailto:thanzihahameed@gmail.com">📧 Email</a> | 
+          <a href="https://github.com/thanziha26" target="_blank">🐙 GitHub</a>
+        </p>
       </section>
     </div>
   </div>
 
-  <section class="section contact">
-    <h2>Contact Me</h2>
-    <p>
-      <a href="mailto:thanzihahameed@gmail.com class="email">Email</a> | 
-      <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" class="linkedin">LinkedIn</a> | 
-      <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="github">GitHub</a>
-    </p>
-  </section>
+  <footer>
+    &copy; 2025 Thanziha. Built with ❤️ and ✨.
+  </footer>
+
 </body>
 </html>
